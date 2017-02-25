@@ -1,0 +1,7 @@
+{
+    "BM_ALGORITHM" : "brute",	
+    "L_ALGORITHM" : "brute"
+	"BM_RERUN_COUNT" : 5,
+	"BM_VERIFY" : true
+	
+}

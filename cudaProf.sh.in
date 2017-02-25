@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH -J pmpp_fluidsim
+#SBATCH -e @CMAKE_BINARY_DIR@/stderr.txt.%j
+#SBATCH -o @CMAKE_BINARY_DIR@/stdout.txt.%j
+#SBATCH -n 1
+#SBATCH --mem-per-cpu=2048
+#SBATCH -t 120
+#SBATCH --exclusive
+#SBATCH -p kurs2
+
+echo "This is Job $SLURM_JOB_ID"
+cd @CMAKE_BINARY_DIR@
+nvprof ./fluidsim -s 512 512 -p ../sim_interaction/interaction01

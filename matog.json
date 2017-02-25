@@ -1,0 +1,11 @@
+{
+	"libname": "matog_gen",
+	"arrays": [
+		// 2D Array
+		{
+			"name": "Array2D",
+			"dimensions" : 2,
+			"fields": [{"type": "float"}]
+		}
+	]
+}
